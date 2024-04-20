@@ -1,0 +1,39 @@
+.skills-wrap {
+  padding: 1rem;
+  .section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    .section-one, .section-two {
+      margin-top: 1rem;
+      border: 1px solid var(--primarily);
+      border-radius: 3px;
+      width: 90%;
+      height: 12rem;
+      box-shadow: -2px 2px var(--primarily),
+     -4px 4px var(--orange),
+    ;
+      
+      h3 {
+        color: var(--orange);
+        padding-bottom: 1rem;
+      }
+
+      p {
+        &::before {
+          content: '▹';
+          color: var(--orange);
+        }
+      }
+    }
+
+    .section-one {
+
+    }
+    .section-two {
+
+    }
+  }
+}

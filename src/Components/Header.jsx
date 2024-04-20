@@ -11,9 +11,7 @@ function Header() {
   return (
     <>
     <div className={isClicked ?'header clicked' :'header'}>
-      <a href="/">
-      <img className='logo' src="./src/assets/logo.png" alt="header logo" />
-      </a>
+      <a href="/" className='logo'>LY</a>
       <div className="bars-icon" onClick={() => setIsClicked(true)}>
         <FontAwesomeIcon icon={faBars} className='bars' />
       </div>
@@ -24,9 +22,9 @@ function Header() {
         <FontAwesomeIcon icon={faXmark} className='bars' />
         </div>
 
-        <a href="">{`<Home/>`}</a>
         <a href="">{`<About Me/>`}</a>
         <a href="">{`<Skills/>`}</a>
+        <a href="">{`<Projects/>`}</a>
         <a href="">{`<Contact/>`}</a>
 
         <div className="btn-def">

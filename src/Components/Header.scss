@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -9,11 +11,13 @@
   top: 0;
   left: 0;
   width: calc(100%);
-  height: 7rem;
+  height: 5rem;
   background-color: var(--slate900);
 
   .logo {
-    width: 4rem;
+    font-size: 2rem;
+    font-family: "Pacifico", cursive, sans-serif;
+    color: var(--primarily);
   }
 }
 .bars {
@@ -67,25 +71,29 @@
   }
 
   .btn-def {
-    a {
-      color: var(--primarily);
-    }
-    align-self: center;
-    margin-top: 2rem;
-    font-size: 1rem;
-    border: 1px solid var(--primarily);
     width: 8rem;
-    padding: .9rem;
-    text-align: center;
-    border-radius: 3px;
-    transition: all 0.2s ease-in-out;
+  }
 
-    &:hover {
-      transform: translate(3px, -3px);
-      box-shadow: -2px 2px var(--primarily),
-       -4px 4px var(--orange),
-      ;
-    }
+}
+.btn-def {
+  a {
+    color: var(--primarily);
+  }
+  align-self: center;
+  margin-top: 2rem;
+  font-size: 1rem;
+  border: 1px solid var(--primarily);
+  width: 100%;
+  padding: .9rem;
+  text-align: center;
+  border-radius: 3px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: translate(3px, -3px);
+    box-shadow: -2px 2px var(--primarily),
+     -4px 4px var(--orange),
+    ;
   }
 }
 .bars-icon {

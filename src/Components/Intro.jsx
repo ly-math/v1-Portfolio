@@ -13,7 +13,7 @@ function Intro() {
 
         </div>
         <h3>I'm a front-end Developer</h3>
-        <p>Passionate about crafting seamless user experiences through elegant design and innovative code. Currently, I am a student of Norton University in Phnom Penh.</p>
+        <p>Passionate about crafting seamless user experiences through elegant design and innovative code. Currently, I am a student at Norton University in Phnom Penh.</p>
         <div className="logos">
           <div className="slider">
             <img src="./src/assets/html.png" alt="html logo" />
