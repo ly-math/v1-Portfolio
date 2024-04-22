@@ -7,7 +7,6 @@ import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 function Header() {
   const [isClicked, setIsClicked] = useState(false)
 
-
   return (
     <>
     <div className={isClicked ?'header clicked' :'header'}>
