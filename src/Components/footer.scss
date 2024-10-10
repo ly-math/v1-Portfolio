@@ -1,0 +1,37 @@
+.footer-wrap {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  .link {
+    cursor: pointer;
+    a {
+      text-decoration: underline;
+      margin-right: 1rem;
+      color: var(--slate300);
+      img {
+        width: 1.5rem;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+
+  .copyright {
+    line-height: 1.5;
+    text-align: center;
+    strong {
+      color: var(--orange);
+    }
+    p.inspired {
+      color: var(--slate400);
+    }
+  }
+}
+
+@media (min-width: 500px) {
+  .footer-wrap {
+    max-width: 55rem;
+  }
+}

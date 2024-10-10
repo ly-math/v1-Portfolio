@@ -8,12 +8,20 @@
       color: var(--orange);
     }
   }
-
-} 
+}
 
 .h2-title {
   color: var(--slate300);
-    span {
-      color: var(--primarily);
+  span {
+    color: var(--primarily);
+  }
+}
+
+//s
+@media (min-width: 500px) {
+  .aboutme-wrap {
+    p {
+      max-width: 55rem;
     }
+  }
 }

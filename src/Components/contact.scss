@@ -1,0 +1,22 @@
+.contact-wrap {
+  padding: 1rem;
+  height: 15rem;
+
+  .text {
+    color: var(--slate400);
+  }
+  .email-me {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    .btn-def {
+      width: 8rem;
+    }
+  }
+}
+
+@media (min-width: 500px) {
+  .contact-wrap {
+    max-width: 55rem;
+  }
+}

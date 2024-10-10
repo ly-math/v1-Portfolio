@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+// ----------
+.links-desktop {
+  display: none;
+}
+// ---------
 .header {
   display: flex;
   justify-content: space-between;
@@ -7,7 +11,7 @@
   z-index: 99999;
   position: fixed;
   padding: 1rem;
-  
+
   top: 0;
   left: 0;
   width: calc(100%);
@@ -30,7 +34,7 @@
   z-index: 999999;
   top: 0;
   right: 0;
-  
+
   width: 75%;
   height: 100%;
   padding: 1rem;
@@ -39,7 +43,7 @@
   flex-direction: column;
   justify-content: center;
   transform: translateX(101%);
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 
   // display: none;
   // border: 1px solid red ;
@@ -51,10 +55,9 @@
     position: fixed;
     top: 1rem;
     right: 1rem;
-    transition: all .45s ease-in-out;
-
+    transition: all 0.45s ease-in-out;
   }
-  
+
   a {
     align-self: center;
     text-decoration: none;
@@ -62,7 +65,7 @@
     font-size: 1.1rem;
     color: var(--slate300);
     margin-bottom: 2rem;
-    transition: all .1s ease-in-out;
+    transition: all 0.1s ease-in-out;
 
     &:hover {
       color: var(--primarily);
@@ -73,7 +76,6 @@
   .btn-def {
     width: 8rem;
   }
-
 }
 .btn-def {
   a {
@@ -84,20 +86,18 @@
   font-size: 1rem;
   border: 1px solid var(--primarily);
   width: 100%;
-  padding: .9rem;
+  padding: 0.9rem;
   text-align: center;
   border-radius: 3px;
   transition: all 0.2s ease-in-out;
 
   &:hover {
     transform: translate(3px, -3px);
-    box-shadow: -2px 2px var(--primarily),
-     -4px 4px var(--orange),
-    ;
+    box-shadow: -4px 4px var(--primarily), -8px 8px var(--orange);
   }
 }
 .bars-icon {
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .links.clicked {
@@ -109,10 +109,24 @@
 }
 
 .header.clicked {
-  
   .bars-icon {
     transform: rotate(180deg);
   }
 }
 
+// s
+@media (min-width: 500px) {
+  .links {
+    width: 20rem;
+  }
+}
 
+// m
+@media (min-width: 768px) {
+  .bars-icon {
+    display: none;
+  }
+  .links {
+    display: none;
+  }
+}

@@ -16,7 +16,7 @@
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 4s steps(30), cursor .4s step-end infinite alternate; 
+    animation: typing 4s steps(30), cursor 0.4s step-end infinite alternate;
   }
 
   @keyframes cursor {
@@ -25,7 +25,9 @@
     }
   }
   @keyframes typing {
-    from { width: 0;}
+    from {
+      width: 0;
+    }
   }
 
   .name {
@@ -59,6 +61,35 @@
   .logos {
     margin-top: 2rem;
     white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: linear-gradient(
+        90deg,
+        var(--slate900),
+        rgba(0, 0, 0, 0)
+      );
+      height: 100%;
+      width: 7rem;
+      left: 0;
+      z-index: 100;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0),
+        var(--slate900)
+      );
+      height: 100%;
+      width: 7rem;
+      right: 0;
+      z-index: 100;
+    }
     .slider {
       display: inline-block;
       animation: logo-slide 15s infinite linear;
@@ -67,22 +98,21 @@
 
       img {
         width: 4rem;
-        margin: .5rem;
+        margin: 0.5rem;
       }
       img:nth-child(1) {
         width: 3rem;
-        margin: .5rem;
+        margin: 0.5rem;
       }
       img:nth-child(2) {
         width: 3rem;
-        margin: .5rem;
+        margin: 0.5rem;
       }
       img:nth-child(5) {
         width: 5rem;
-        margin: .5rem;
+        margin: 0.5rem;
       }
     }
-    
   }
 }
 
@@ -96,11 +126,117 @@
 }
 
 // xs
-@media (max-width: 380px){
+@media (max-width: 380px) {
   .intro-wrap {
     .name {
       h2 {
         font-size: 2rem;
+      }
+    }
+  }
+}
+// s
+@media (min-width: 500px) {
+  .intro-wrap {
+    p {
+      max-width: 36rem;
+    }
+
+    .logos {
+      .slider {
+        img {
+          width: 5rem;
+          margin-inline: 1rem;
+        }
+        img:nth-child(1) {
+          width: 4rem;
+        }
+        img:nth-child(2) {
+          width: 4rem;
+        }
+        img:nth-child(3) {
+          width: 5rem;
+        }
+        img:nth-child(4) {
+          width: 5rem;
+        }
+        img:nth-child(5) {
+          width: 6.5rem;
+        }
+        img:nth-child(6) {
+          width: 5rem;
+        }
+      }
+    }
+  }
+}
+
+//m
+@media (min-width: 768px) {
+  .intro-wrap {
+    .logos {
+      position: relative;
+      width: 55rem;
+      overflow: hidden;
+
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: linear-gradient(
+          90deg,
+          var(--slate900),
+          rgba(0, 0, 0, 0)
+        );
+        height: 100%;
+        width: 7rem;
+        left: 0;
+        z-index: 100;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        background-image: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0),
+          var(--slate900)
+        );
+        height: 100%;
+        width: 7rem;
+        right: 0;
+        z-index: 100;
+      }
+      .slider {
+        img:nth-child(1) {
+          width: 4.5rem;
+        }
+        img:nth-child(2) {
+          width: 4.5rem;
+        }
+        img:nth-child(3) {
+          width: 5.5rem;
+        }
+        img:nth-child(4) {
+          width: 5.5rem;
+        }
+        img:nth-child(5) {
+          width: 7rem;
+        }
+        img:nth-child(6) {
+          width: 5.5rem;
+        }
+      }
+    }
+
+    h3 {
+      font-size: 2.5rem;
+    }
+
+    .name {
+      h2 {
+        font-size: 3.5rem;
+      }
+      #slash {
+        font-size: 5rem;
       }
     }
   }

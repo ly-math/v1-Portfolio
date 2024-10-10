@@ -1,11 +1,13 @@
-import React from 'react'
-import './skills.scss'
+import React from "react";
+import "./skills.scss";
 
 function Skills() {
   return (
     <>
+      <h2 className="h2-title">
+        <span>{"<"}</span>Skills <span>{"/>"}</span>
+      </h2>
       <div className="skills-wrap">
-        <h2 className='h2-title'><span>{'<'}</span>Skills <span>{'/>'}</span></h2>
         <div className="section-container">
           <div className="section-one">
             <h3>Languages</h3>
@@ -14,6 +16,7 @@ function Skills() {
               <p>CSS</p>
               <p>Javascript</p>
               <p>Typescript</p>
+              <p>C++</p>
             </div>
           </div>
           <div className="section-two">
@@ -29,7 +32,7 @@ function Skills() {
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default Skills
+export default Skills;
