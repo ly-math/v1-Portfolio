@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 // ----------
-.links-desktop {
+.nav-desktop {
   display: none;
 }
 // ---------
@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 99999;
+  z-index: 9999;
   position: fixed;
   padding: 1rem;
 
@@ -61,7 +61,6 @@
   a {
     align-self: center;
     text-decoration: none;
-    color: inherit;
     font-size: 1.1rem;
     color: var(--slate300);
     margin-bottom: 2rem;
@@ -123,10 +122,68 @@
 
 // m
 @media (min-width: 768px) {
+  .header {
+    display: none;
+  }
   .bars-icon {
     display: none;
   }
   .links {
     display: none;
+  }
+  .logo {
+    display: none;
+  }
+  // -----------------------
+  .nav-desktop {
+    // border: 1px solid red;
+    padding-block: 1rem;
+    padding-inline: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    background-color: var(--slate900-transparent);
+    backdrop-filter: blur(10px);
+
+    transition: 0.5s transform ease-in-out;
+    .LY {
+      // border: 1px solid red;
+      font-size: 2rem;
+      font-family: "Pacifico", cursive, sans-serif;
+      color: var(--primarily);
+    }
+    .link-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.5rem;
+
+      a {
+        color: inherit;
+        font-size: 1.1rem;
+        transition: all 0.1s ease-in-out;
+
+        &:hover {
+          color: var(--primarily);
+          transform: scale(1.05);
+        }
+      }
+
+      .btn-def {
+        width: 7rem;
+        // padding: 0.7rem;
+        margin: 0;
+        color: var(--primarily);
+      }
+    }
+  }
+
+  .nav-desktop.scrolled {
+    transform: translateY(-100%);
   }
 }

@@ -1,0 +1,29 @@
+@media (min-width: 1300px) {
+  .overlay-wrap {
+    p {
+      &::before {
+        content: "";
+        position: fixed;
+        z-index: 999;
+        bottom: 0;
+        right: 10rem;
+        width: 2px;
+        height: 10rem;
+        background-color: var(--slate300);
+        opacity: 0.5;
+      }
+      &::after {
+        content: "Mathlee524@gmail.com";
+        position: fixed;
+        font: var(--font-mono);
+        opacity: 0.5;
+        font-weight: 100;
+        z-index: 999;
+        bottom: 0;
+        right: 4.8rem;
+        rotate: 90deg;
+        transform: translate(-160%);
+      }
+    }
+  }
+}

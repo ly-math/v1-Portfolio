@@ -4,7 +4,7 @@ import "./contact.scss";
 function Contact() {
   return (
     <>
-      <h2 className="h2-title">
+      <h2 className="h2-title" id="contact">
         <span>{"<"}</span>Contact <span>{"/>"}</span>
       </h2>
       <div className="contact-wrap">

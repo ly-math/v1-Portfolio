@@ -4,7 +4,7 @@ import "./skills.scss";
 function Skills() {
   return (
     <>
-      <h2 className="h2-title">
+      <h2 className="h2-title" id="skills">
         <span>{"<"}</span>Skills <span>{"/>"}</span>
       </h2>
       <div className="skills-wrap">

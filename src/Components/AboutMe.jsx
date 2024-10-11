@@ -4,7 +4,7 @@ import "./aboutme.scss";
 function AboutMe() {
   return (
     <>
-      <h2 className="h2-title">
+      <h2 className="h2-title" id="about-me">
         <span>{"<"}</span>About Me <span>{"/>"}</span>
       </h2>
       <div className="aboutme-wrap">

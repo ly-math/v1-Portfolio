@@ -4,7 +4,7 @@ import "./projects.scss";
 function Projects() {
   return (
     <>
-      <h2 className="h2-title">
+      <h2 className="h2-title" id="projects">
         <span>{"<"}</span>Projects <span>{"/>"}</span>
       </h2>
       <div className="projects-wrap">
