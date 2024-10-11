@@ -1,5 +1,8 @@
 import React from "react";
 import "./projects.scss";
+import animelistImage from "../assets/images/animelist.png";
+import skin1004Image from "../assets/images/skin1004.png";
+import bitcoinImage from "../assets/images/bitcoin.png";
 
 function Projects() {
   return (
@@ -9,10 +12,7 @@ function Projects() {
       </h2>
       <div className="projects-wrap">
         <div className="project">
-          <img
-            src="/v1-Portfolio/src/assets/images/animelist.png"
-            alt="project image"
-          />
+          <img src={animelistImage} alt="project image" />
           <div className="text">
             <h4>animelist69</h4>
             <p>
@@ -40,10 +40,7 @@ function Projects() {
         </div>
         <div className="project">
           <div className="pseudo-only"></div>
-          <img
-            src="/v1-Portfolio/src/assets/images/skin1004.png"
-            alt="project image"
-          />
+          <img src={skin1004Image} alt="project image" />
           <div className="text">
             <h4>skin1004</h4>
             <p>
@@ -73,10 +70,7 @@ function Projects() {
           </div>
         </div>
         <div className="project">
-          <img
-            src="/v1-Portfolio/src/assets/images/bitcoin.png"
-            alt="project image"
-          />
+          <img src={bitcoinImage} alt="project image" />
           <div className="text">
             <h4>Bitcoin</h4>
             <p>

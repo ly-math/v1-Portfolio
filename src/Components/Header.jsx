@@ -40,7 +40,7 @@ function Header() {
   return (
     <>
       <div className={isClicked ? "header clicked" : "header"}>
-        <a href="/" className="logo">
+        <a href="/v1-Portfolio/" className="logo">
           LY
         </a>
         <div className="bars-icon" onClick={() => setIsClicked(true)}>
@@ -67,7 +67,7 @@ function Header() {
         </div>
       </div>
       <div className={isScrolled ? "nav-desktop scrolled" : "nav-desktop"}>
-        <a href="/" className="LY">
+        <a href="/v1-Portfolio/" className="LY">
           LY
         </a>
         <div className="link-section">
