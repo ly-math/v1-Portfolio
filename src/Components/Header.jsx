@@ -15,10 +15,14 @@ function Header() {
 
     if (currentScrollTop > lastScrollTop) {
       // Scroll Down
-      setIsScrolled(true);
+      setTimeout(() => {
+        setIsScrolled(true);
+      }, 200);
     } else {
       // Scroll Up
-      setIsScrolled(false);
+      setTimeout(() => {
+        setIsScrolled(false);
+      }, 200);
     }
 
     setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop); // For mobile or negative scrolling
