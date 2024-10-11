@@ -37,9 +37,15 @@ function Header() {
     };
   }, [lastScrollTop]); // run effect when lastScrollTop changes
 
+  function handleHeader() {}
+
   return (
     <>
-      <div className={isClicked ? "header clicked" : "header"}>
+      <div
+        className={`header ${isClicked ? "clicked" : ""} ${
+          isScrolled ? "scrolled" : ""
+        }`}
+      >
         <a href="/v1-Portfolio/" className="logo">
           LY
         </a>
