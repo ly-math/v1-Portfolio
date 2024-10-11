@@ -19,28 +19,28 @@ function Intro() {
         </p>
         <div className="logos">
           <div className="slider">
-            <img src="./src/assets/html.png" alt="html logo" />
-            <img src="./src/assets/css.png" alt="css logo" />
-            <img src="./src/assets/sass.png" alt="sass logo" />
-            <img src="./src/assets/js.png" alt="js logo" />
-            <img src="./src/assets/ts.png" alt="ts logo" />
-            <img src="./src/assets/reactjs.png" alt="react logo" />
+            <img src="/v1-Portfolio/src/assets/html.png" alt="html logo" />
+            <img src="/v1-Portfolio/src/assets/css.png" alt="css logo" />
+            <img src="/v1-Portfolio/src/assets/sass.png" alt="sass logo" />
+            <img src="/v1-Portfolio/src/assets/js.png" alt="js logo" />
+            <img src="/v1-Portfolio/src/assets/ts.png" alt="ts logo" />
+            <img src="/v1-Portfolio/src/assets/reactjs.png" alt="react logo" />
           </div>
           <div className="slider">
-            <img src="./src/assets/html.png" alt="html logo" />
-            <img src="./src/assets/css.png" alt="css logo" />
-            <img src="./src/assets/sass.png" alt="sass logo" />
-            <img src="./src/assets/js.png" alt="js logo" />
-            <img src="./src/assets/ts.png" alt="ts logo" />
-            <img src="./src/assets/reactjs.png" alt="react logo" />
+            <img src="/v1-Portfolio/src/assets/html.png" alt="html logo" />
+            <img src="/v1-Portfolio/src/assets/css.png" alt="css logo" />
+            <img src="/v1-Portfolio/src/assets/sass.png" alt="sass logo" />
+            <img src="/v1-Portfolio/src/assets/js.png" alt="js logo" />
+            <img src="/v1-Portfolio/src/assets/ts.png" alt="ts logo" />
+            <img src="/v1-Portfolio/src/assets/reactjs.png" alt="react logo" />
           </div>
           <div className="slider">
-            <img src="./src/assets/html.png" alt="html logo" />
-            <img src="./src/assets/css.png" alt="css logo" />
-            <img src="./src/assets/sass.png" alt="sass logo" />
-            <img src="./src/assets/js.png" alt="js logo" />
-            <img src="./src/assets/ts.png" alt="ts logo" />
-            <img src="./src/assets/reactjs.png" alt="react logo" />
+            <img src="/v1-Portfolio/src/assets/html.png" alt="html logo" />
+            <img src="/v1-Portfolio/src/assets/css.png" alt="css logo" />
+            <img src="/v1-Portfolio/src/assets/sass.png" alt="sass logo" />
+            <img src="/v1-Portfolio/src/assets/js.png" alt="js logo" />
+            <img src="/v1-Portfolio/src/assets/ts.png" alt="ts logo" />
+            <img src="/v1-Portfolio/src/assets/reactjs.png" alt="react logo" />
           </div>
         </div>
       </div>
