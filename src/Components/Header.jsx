@@ -8,22 +8,23 @@ function Header() {
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [lastScrollTop, setLastScrollTop] = useState(0); // to track previous scroll position
+  const scrollThreshold = 30;
 
   const handleScroll = () => {
-    const currentScrollTop =
-      window.pageYOffset || document.documentElement.scrollTop;
+    const currentScrollTop = document.documentElement.scrollTop;
 
-    if (currentScrollTop > lastScrollTop) {
+    if (currentScrollTop - lastScrollTop > scrollThreshold) {
       // Scroll Down
       setTimeout(() => {
         setIsScrolled(true);
       }, 200);
-    } else {
+    } else if (lastScrollTop - currentScrollTop > scrollThreshold) {
       // Scroll Up
       setTimeout(() => {
         setIsScrolled(false);
       }, 200);
     }
+    // console.log(currentScrollTop);
 
     setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop); // For mobile or negative scrolling
   };
