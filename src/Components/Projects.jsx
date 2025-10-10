@@ -20,7 +20,7 @@ function Projects() {
               accessing detailed information about each of them. Implemented
               using <span>APIs, SCSS & React.js.</span>
             </p>
-            <a href="https://animelist69.netlify.app/" target="blank">
+            <a href="https://ly-math.github.io/AnimeList/" target="blank">
               <div className="arrow-icon">
                 <svg
                   width="35"
