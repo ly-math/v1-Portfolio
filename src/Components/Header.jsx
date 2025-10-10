@@ -8,7 +8,7 @@ function Header() {
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [lastScrollTop, setLastScrollTop] = useState(0); // to track previous scroll position
-  const scrollThreshold = 30;
+  const scrollThreshold = 10;
 
   const handleScroll = () => {
     const currentScrollTop = document.documentElement.scrollTop;
