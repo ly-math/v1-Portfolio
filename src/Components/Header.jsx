@@ -85,10 +85,10 @@ function Header() {
           <a href="#contact">{`<Contact />`}</a>
           <div className="btn-def">
             <a
-              href="https://drive.google.com/file/d/1XtTiZr0W5_2fZDbsg6F4unvhRXh9dy_3/view?usp=sharing"
+              href="https://drive.google.com/file/d/1-L2TN_Ty0hyFMQvuD17dlsYud2EonR9B/view?usp=sharing"
               target="blank"
             >
-              Resume
+              Resume``
             </a>
           </div>
         </div>
