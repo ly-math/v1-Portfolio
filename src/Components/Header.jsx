@@ -88,7 +88,7 @@ function Header() {
               href="https://drive.google.com/file/d/1-L2TN_Ty0hyFMQvuD17dlsYud2EonR9B/view?usp=sharing"
               target="blank"
             >
-              Resume``
+              Resume
             </a>
           </div>
         </div>
