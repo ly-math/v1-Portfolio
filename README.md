@@ -24,12 +24,9 @@ It includes sections like:
 
 This portfolio was developed using:
 
-- **HTML5** – Semantic and accessible markup  
-- **CSS3** – Custom styling and layout  
-- **JavaScript (ES6)** – Interactive elements  
-- **Vite** – For fast development and optimized builds  
-- **GitHub Pages** – For easy hosting and deployment  
-
+- **React.js (Vite)** – Frontend framework for fast rendering  
+- **CSS / SCSS** – Custom styling and layout   
+- **GitHub Pages** – For hosting and deployment  
 ---
 
 ## 🚀 Features
